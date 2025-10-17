@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="540" viewBox="0 0 1440 540">
+  <defs>
+    <path id="white-curved-header-a" d="M0,100 L1440,100 L1440,529.005624 C1109.33333,647.084747 808.666667,670.951804 538,600.606795 C267.333333,530.261785 88,505.363222 0,525.911106 L0,100 Z"/>
+  </defs>
+  <use fill="#FFF" fill-rule="evenodd" transform="translate(0 -100)" xlink:href="#white-curved-header-a"/>
+</svg>

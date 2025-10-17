@@ -1,0 +1,543 @@
+@charset "UTF-8";
+.startup-program-content .startup-program-section-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.startup-program-content .heading-with-image {
+  margin-bottom: 80px;
+}
+.startup-program-content .heading-with-image .heading-with-image-img {
+  border-radius: 7px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+}
+.startup-program-content .heading-with-image .heading-with-image-desc {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.startup-program-content
+  .heading-with-image
+  .heading-with-image-desc:last-child {
+  margin-bottom: 0px;
+}
+.startup-program-content
+  .heading-with-image
+  .heading-with-image-desc.covered-content {
+  color: #f36522;
+}
+.startup-program-content .whats-included-section {
+  margin-bottom: 80px;
+}
+.startup-program-content .whats-included-section .whats-included-section-title {
+  margin-bottom: 50px;
+}
+.startup-program-content .whats-included-section .included-box-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item {
+  gap: 30px;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 7px;
+  position: relative;
+  margin: auto;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item
+  .included-box-image {
+  overflow: hidden;
+  max-width: 470px;
+  border-radius: 7px;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item
+  .included-box-image
+  .included-box-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item
+  .included-box-content {
+  width: calc(100% - 500px);
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item
+  .included-box-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item
+  .included-box-description {
+  margin-bottom: 0px;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item
+  .included-box-description
+  li {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(41, 41, 41, 0.8);
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item
+  .included-box-description
+  li:last-child {
+  margin-bottom: 0px;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item:hover {
+  border-color: #f36522;
+}
+.startup-program-content
+  .whats-included-section
+  .included-box-listing
+  .included-box-item:hover
+  .included-box-img {
+  transform: scale(1.1);
+}
+.startup-program-content .why-choose-section {
+  margin-bottom: 80px;
+}
+.startup-program-content .why-choose-section .why-choose-section-title {
+  margin-bottom: 50px;
+}
+.startup-program-content
+  .why-choose-section
+  .why-choose-left-image
+  .why-choose-image {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+.startup-program-content
+  .why-choose-section
+  .why-choose-right-content
+  .why-choose-card {
+  padding: 1px;
+  border-radius: 7px;
+  background: #dddddd;
+  display: flex;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+}
+.startup-program-content
+  .why-choose-section
+  .why-choose-right-content
+  .why-choose-card
+  .why-choose-card-inner {
+  border-radius: 7px;
+  padding: 20px;
+  background: #ffffff;
+}
+.startup-program-content
+  .why-choose-section
+  .why-choose-right-content
+  .why-choose-card
+  .why-choose-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 27px;
+}
+.startup-program-content
+  .why-choose-section
+  .why-choose-right-content
+  .why-choose-card
+  .why-choose-card-description {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 31px;
+  color: rgba(41, 41, 41, 0.8);
+  font-weight: 500;
+}
+.startup-program-content
+  .why-choose-section
+  .why-choose-right-content
+  .why-choose-card:last-child {
+  margin-bottom: 0px;
+}
+.startup-program-content
+  .why-choose-section
+  .why-choose-right-content
+  .why-choose-card:hover {
+  background: linear-gradient(162.92deg, #f36522 0.86%, #ffffff 99.91%);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.031372549),
+    7px 9px 12px 0px rgba(0, 0, 0, 0.031372549),
+    15px 21px 16px 0px rgba(0, 0, 0, 0.0196078431),
+    27px 38px 18px 0px rgba(0, 0, 0, 0), 41px 59px 20px 0px rgba(0, 0, 0, 0);
+}
+.startup-program-content .dont-miss-out-section {
+  padding: 0.9px;
+  border-radius: 7px;
+  display: flex;
+  background: linear-gradient(132.92deg, #f36522 0.86%, #ffffff 99.91%);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.031372549),
+    7px 9px 12px 0px rgba(0, 0, 0, 0.031372549),
+    15px 21px 16px 0px rgba(0, 0, 0, 0.0196078431),
+    27px 38px 18px 0px rgba(0, 0, 0, 0), 41px 59px 20px 0px rgba(0, 0, 0, 0);
+  margin-bottom: 80px;
+}
+.startup-program-content .dont-miss-out-section .dont-miss-out-content {
+  width: 100%;
+  height: 100%;
+  padding: 50px 27px;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+.startup-program-content .dont-miss-out-section .dont-miss-out-title {
+  margin-bottom: 18px;
+  color: #f36522;
+}
+.startup-program-content .dont-miss-out-section .dont-miss-out-description {
+  font-size: 19px;
+  color: rgba(41, 41, 41, 0.8);
+  font-weight: 500;
+  margin: 0px;
+  line-height: 1.5;
+}
+.startup-program-content .dont-miss-out-section .dont-miss-out-saperation {
+  border-bottom: 1px solid #f36522;
+  width: 100%;
+  margin: 30px 0px;
+}
+.startup-program-content
+  .schedule-consultation-section
+  .schedule-consultation-text {
+  font-size: 19px;
+  color: rgba(41, 41, 41, 0.8);
+  font-weight: 500;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.startup-program-content
+  .schedule-consultation-section
+  .schedule-consultation-button {
+  background-color: #f36522;
+  color: #ffffff;
+  padding: 19.2px 40px;
+  width: fit-content;
+}
+.startup-program-content
+  .schedule-consultation-section
+  .schedule-consultation-button:hover {
+  background-color: #ffffff;
+  color: #f36522;
+  border-color: #f36522;
+}
+.startup-program-content
+  .schedule-consultation-section
+  .schedule-consultation-button:hover
+  svg
+  path {
+  fill: #f36522;
+}
+.startup-program-content .schedule-consultation-section .get-started-title {
+  margin: 80px 0 0 0;
+  color: #f36522;
+}
+
+@media (max-width: 1199.55px) {
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item
+    .included-box-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item
+    .included-box-description
+    li {
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-right-content
+    .why-choose-card
+    .why-choose-card-title {
+    font-size: 20px;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-right-content
+    .why-choose-card
+    .why-choose-card-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 991.55px) {
+  .startup-program-content .startup-program-section-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .startup-program-content .heading-with-image {
+    margin-bottom: 60px;
+  }
+  .startup-program-content .heading-with-image .heading-with-image-img {
+    margin-bottom: 24px;
+  }
+  .startup-program-content .heading-with-image .heading-with-image-desc {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .startup-program-content .whats-included-section {
+    margin-bottom: 60px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .whats-included-section-title {
+    margin-bottom: 32px;
+  }
+  .startup-program-content .whats-included-section .included-box-listing {
+    gap: 24px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item {
+    gap: 24px;
+    padding: 20px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item
+    .included-box-content {
+    width: 100%;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item
+    .included-box-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item
+    .included-box-description {
+    padding-left: 22px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item
+    .included-box-description
+    li {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .startup-program-content .why-choose-section {
+    margin-bottom: 60px;
+  }
+  .startup-program-content .why-choose-section .why-choose-section-title {
+    margin-bottom: 32px;
+  }
+  .startup-program-content .why-choose-section .why-choose-left-image {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-left-image
+    .why-choose-image {
+    border-radius: 12px;
+    max-width: 450px;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .startup-program-content .dont-miss-out-section {
+    margin-bottom: 60px;
+  }
+  .startup-program-content
+    .schedule-consultation-section
+    .schedule-consultation-button
+    svg {
+    width: 24px;
+    height: 24px;
+  }
+  .startup-program-content .schedule-consultation-section .get-started-title {
+    margin: 60px 0 0 0;
+  }
+}
+@media (max-width: 767.55px) {
+  .startup-program-content .startup-program-section-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .startup-program-content .heading-with-image {
+    margin-bottom: 35px;
+  }
+  .startup-program-content .heading-with-image .heading-with-image-img {
+    margin-bottom: 16px;
+  }
+  .startup-program-content .heading-with-image .heading-with-image-desc {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .startup-program-content .heading-with-image .heading-with-image-desc br {
+    display: none;
+  }
+  .startup-program-content .whats-included-section {
+    margin-bottom: 35px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .whats-included-section-title {
+    margin-bottom: 24px;
+  }
+  .startup-program-content .whats-included-section .included-box-listing {
+    gap: 15px;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item {
+    gap: 15px;
+    padding: 15px;
+    flex-direction: column;
+  }
+  .startup-program-content
+    .whats-included-section
+    .included-box-listing
+    .included-box-item
+    .included-box-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 24px;
+  }
+  .startup-program-content .why-choose-section {
+    margin-bottom: 35px;
+  }
+  .startup-program-content .why-choose-section .why-choose-section-title {
+    margin-bottom: 24px;
+  }
+  .startup-program-content .why-choose-section .why-choose-left-image {
+    margin-bottom: 24px;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-left-image
+    .why-choose-image {
+    border-radius: 8px;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-right-content
+    .why-choose-card {
+    margin-bottom: 8px;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-right-content
+    .why-choose-card
+    .why-choose-card-inner {
+    padding: 15px;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-right-content
+    .why-choose-card
+    .why-choose-card-title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .startup-program-content
+    .why-choose-section
+    .why-choose-right-content
+    .why-choose-card
+    .why-choose-card-description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .startup-program-content .dont-miss-out-section {
+    margin-bottom: 35px;
+  }
+  .startup-program-content .dont-miss-out-section .dont-miss-out-content {
+    padding: 20px 15px;
+  }
+  .startup-program-content .dont-miss-out-section .dont-miss-out-title {
+    margin-bottom: 10px;
+  }
+  .startup-program-content .dont-miss-out-section .dont-miss-out-description {
+    font-size: 14px;
+  }
+  .startup-program-content
+    .dont-miss-out-section
+    .dont-miss-out-description
+    br {
+    display: none;
+  }
+  .startup-program-content .dont-miss-out-section .dont-miss-out-saperation {
+    margin: 15px 0px;
+  }
+  .startup-program-content
+    .schedule-consultation-section
+    .schedule-consultation-text {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  .startup-program-content
+    .schedule-consultation-section
+    .schedule-consultation-button {
+    padding: 9.7px 15px;
+  }
+  .startup-program-content
+    .schedule-consultation-section
+    .schedule-consultation-button
+    svg {
+    width: 20px;
+    height: 20px;
+  }
+  .startup-program-content .schedule-consultation-section .get-started-title {
+    margin: 24px 0 0 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

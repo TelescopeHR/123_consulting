@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Details Page</title>
+  <!-- favicon icon -->
+  <link rel="icon" href="./images/favicon-icon.png" sizes="32x32">
+
+  <!-- Bootstrap 5 css Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Font Family Bebas Neue Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <!-- Font Family Montserrat Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Slick slider css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- style.css file -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Header Top Bar Start -->
+  <div class="header-top-bar">
+    <div class="header-container container">
+      <div class="header-top-bar-inner d-flex justify-content-between align-items-center">
+        <div class="coupon-code-left">
+          <div class="alert alert-dismissible fade show p-0 m-0 d-flex align-items-center" role="alert">
+            <span class="coupon-code-title"><a href="/">Click Here</a> to get a $10 off coupon code.</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+              <img src="./images/close-btn-icon.svg" width="24px" height="24px" alt="close icon">
+            </button>
+          </div>
+        </div>
+        <div class="contact-number-right">
+          <a class="contact-top-action" href="tel:7139043571">Call or Text Us at: 7139043571</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Top Bar end -->
+  <!-- Header start -->
+  <header class="header">
+    <div class="header-main-content">
+      <div class="header-container container">
+        <div class="row flex-nowrap">
+          <nav class="navbar navbar-expand-lg justify-content-between align-items-center py-0">
+            <a class="navbar-brand p-0 m-0" href="#">
+              <img src="./images/logo.svg" alt="logo" width="170" height="35" />
+            </a>
+
+            <div class="header-button-box d-flex align-items-center">
+              <button class="btn header-cart-btn d-flex align-items-center p-0">
+                <img src="./images/shopping-cart-icon.svg" width="24px" height="24px" alt="cart icon">
+              </button>
+              <button class="btn header-login-btn d-flex align-items-center p-0">
+                Log In
+              </button>
+              <button class="btn button-primary header-sign-up-btn d-flex align-items-center">
+                Sign up
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96451 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46928 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM6.945 18.5156C7.48757 17.6671 8.23501 16.9688 9.11843 16.4851C10.0019 16.0013 10.9928 15.7478 12 15.7478C13.0072 15.7478 13.9982 16.0013 14.8816 16.4851C15.765 16.9688 16.5124 17.6671 17.055 18.5156C15.6097 19.6397 13.831 20.2499 12 20.2499C10.169 20.2499 8.39032 19.6397 6.945 18.5156ZM9 11.25C9 10.6567 9.17595 10.0766 9.5056 9.58329C9.83524 9.08994 10.3038 8.70542 10.852 8.47836C11.4001 8.2513 12.0033 8.19189 12.5853 8.30764C13.1672 8.4234 13.7018 8.70912 14.1213 9.12868C14.5409 9.54824 14.8266 10.0828 14.9424 10.6647C15.0581 11.2467 14.9987 11.8499 14.7716 12.3981C14.5446 12.9462 14.1601 13.4148 13.6667 13.7444C13.1734 14.0741 12.5933 14.25 12 14.25C11.2044 14.25 10.4413 13.9339 9.87868 13.3713C9.31607 12.8087 9 12.0456 9 11.25ZM18.165 17.4759C17.3285 16.2638 16.1524 15.3261 14.7844 14.7806C15.5192 14.2019 16.0554 13.4085 16.3184 12.5108C16.5815 11.6132 16.5582 10.6559 16.252 9.77207C15.9457 8.88825 15.3716 8.12183 14.6096 7.5794C13.8475 7.03696 12.9354 6.74548 12 6.74548C11.0646 6.74548 10.1525 7.03696 9.39044 7.5794C8.62839 8.12183 8.05432 8.88825 7.74805 9.77207C7.44179 10.6559 7.41855 11.6132 7.68157 12.5108C7.94459 13.4085 8.4808 14.2019 9.21563 14.7806C7.84765 15.3261 6.67147 16.2638 5.835 17.4759C4.77804 16.2873 4.0872 14.8185 3.84567 13.2464C3.60415 11.6743 3.82224 10.0658 4.47368 8.61478C5.12512 7.16372 6.18213 5.93192 7.51745 5.06769C8.85276 4.20346 10.4094 3.74367 12 3.74367C13.5906 3.74367 15.1473 4.20346 16.4826 5.06769C17.8179 5.93192 18.8749 7.16372 19.5263 8.61478C20.1778 10.0658 20.3959 11.6743 20.1543 13.2464C19.9128 14.8185 19.222 16.2873 18.165 17.4759Z"
+                    fill="#FF502E" />
+                </svg>
+
+              </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navigation-barmenu" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Agency Startups</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Policy Manuals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Consultation Booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Intake Form</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Resources
+                    <img src="./images/arrow-down-icon.svg" width="24px" height="24px" alt="">
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="blog.html">Blogs</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/">Resources 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->
+
+  <!-- Course Details Content Section Start -->
+  <section class="course-details-content-section">
+    <div class="container">
+      <div class="course-inner-container">
+        <div class="banner-heading-content text-start">
+          <h1 class="course-details-content-title section_heading"> 8 Hour Initial Administrator Training </h1>
+          <p class="course-details-content-dis"> Meets TX HHSC Requirement §558.259(c) for HCSSAs. HHS Approved 8
+            hours
+            of required pre-appointment clock hours for all license types including PAS, home health and hospice
+            Administrators/Alternate Administrators. Enjoy our mobile friendly website, video and audio classes,
+            ability
+            to use one account for all administrators, affordable pricing, 9a-9p support (phone, email, text). </p>
+          <p class="course-details-content-dis"> Included in the 8 hours: </p>
+          <p class="course-details-content-dis"> (1) information on the licensing standards for an agency; and (2)
+            information on the state and federal laws applicable to an agency, including: </p>
+          <p class="course-details-content-dis"> (B) the Texas Human Resources Code, Chapter 102, Rights of the
+            Elderly;
+          </p>
+          <p class="course-details-content-dis"> (C) the Americans with Disabilities Act; </p>
+          <p class="course-details-content-dis"> (D) the Civil Rights Act of 1991; </p>
+          <p class="course-details-content-dis"> (E) the Rehabilitation Act of 1993; </p>
+          <p class="course-details-content-dis"> (F) the Family and Medical Leave Act of 1993; and </p>
+          <p class="course-details-content-dis"> (G) the Occupational Safety and Health Administration requirements.
+          </p>
+          <div class="course-details-lessons d-flex justify-content-end align-items-center">
+            <div class="course-details-lessons-box d-flex align-items-center">
+              <img src="./images/bookmark-icon.svg" width="20px" height="20px" alt="bookmark icon">
+              <span class="course-details-lessons-value"> 7 </span> lessons
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Course Details Content Section End -->
+
+  <!-- price with lesson Section Start -->
+  <section class="course-details-price-with-lesson">
+    <div class="container">
+      <div class="course-inner-container">
+        <div class="course-details-pricing-box">
+          <div class="course-details-pricing-items course-details-pricing-status">
+            <div class="pricing-items-icon-with-text d-flex align-items-center">
+              <img src="./images/status-icon.svg" width="24px" height="24px" alt="status icon">
+              Status
+            </div>
+            <div class="pricing-items-notenrolled-tag"> Not Enrolled </div>
+          </div>
+          <div class="course-details-pricing-items course-details-pricing-price">
+            <div class="pricing-items-icon-with-text d-flex align-items-center">
+              <img src="./images/dollar-icon.svg" width="22px" height="22px" alt="dollar icon">
+              Price
+            </div>
+            <div class="pricing-items-price-tag"> $79.0 </div>
+          </div>
+          <div class="course-details-pricing-items course-details-pricing-cart">
+            <button
+              class="btn button-primary card-addto-cart-btn course-details-pricing-addtocart w-100 justify-content-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.5756 5.51906C21.5052 5.43481 21.4172 5.36705 21.3177 5.32056C21.2183 5.27407 21.1098 5.24998 21 5.25H5.87625L5.30625 2.11594C5.27485 1.94313 5.1838 1.78681 5.04897 1.67425C4.91414 1.56169 4.74408 1.50003 4.56844 1.5H2.25C2.05109 1.5 1.86032 1.57902 1.71967 1.71967C1.57902 1.86032 1.5 2.05109 1.5 2.25C1.5 2.44891 1.57902 2.63968 1.71967 2.78033C1.86032 2.92098 2.05109 3 2.25 3H3.9375L6.33375 16.1522C6.40434 16.5422 6.57671 16.9067 6.83344 17.2087C6.47911 17.5397 6.22336 17.9623 6.09455 18.4298C5.96575 18.8972 5.96892 19.3912 6.10371 19.8569C6.23851 20.3226 6.49966 20.7419 6.85821 21.0683C7.21676 21.3947 7.6587 21.6154 8.13502 21.7059C8.61134 21.7965 9.10344 21.7533 9.55673 21.5813C10.01 21.4092 10.4068 21.115 10.7031 20.7312C10.9994 20.3474 11.1836 19.889 11.2353 19.407C11.287 18.9249 11.2041 18.4379 10.9959 18H15.2541C15.0863 18.3513 14.9995 18.7357 15 19.125C15 19.6442 15.154 20.1517 15.4424 20.5834C15.7308 21.0151 16.1408 21.3515 16.6205 21.5502C17.1001 21.7489 17.6279 21.8008 18.1371 21.6996C18.6463 21.5983 19.114 21.3483 19.4812 20.9812C19.8483 20.614 20.0983 20.1463 20.1996 19.6371C20.3008 19.1279 20.2489 18.6001 20.0502 18.1205C19.8515 17.6408 19.5151 17.2308 19.0834 16.9424C18.6517 16.654 18.1442 16.5 17.625 16.5H8.54719C8.37155 16.5 8.20149 16.4383 8.06665 16.3257C7.93182 16.2132 7.84077 16.0569 7.80938 15.8841L7.51219 14.25H18.3872C18.9141 14.2499 19.4243 14.0649 19.8288 13.7272C20.2333 13.3896 20.5064 12.9206 20.6006 12.4022L21.7406 6.13406C21.7599 6.02572 21.7551 5.91447 21.7266 5.80818C21.6981 5.7019 21.6466 5.60319 21.5756 5.51906ZM9.75 19.125C9.75 19.3475 9.68402 19.565 9.5604 19.75C9.43679 19.935 9.26109 20.0792 9.05552 20.1644C8.84995 20.2495 8.62375 20.2718 8.40552 20.2284C8.18729 20.185 7.98684 20.0778 7.8295 19.9205C7.67217 19.7632 7.56502 19.5627 7.52162 19.3445C7.47821 19.1262 7.50049 18.9 7.58564 18.6945C7.67078 18.4889 7.81498 18.3132 7.99998 18.1896C8.18499 18.066 8.4025 18 8.625 18C8.92337 18 9.20952 18.1185 9.4205 18.3295C9.63147 18.5405 9.75 18.8266 9.75 19.125ZM18.75 19.125C18.75 19.3475 18.684 19.565 18.5604 19.75C18.4368 19.935 18.2611 20.0792 18.0555 20.1644C17.85 20.2495 17.6238 20.2718 17.4055 20.2284C17.1873 20.185 16.9868 20.0778 16.8295 19.9205C16.6722 19.7632 16.565 19.5627 16.5216 19.3445C16.4782 19.1262 16.5005 18.9 16.5856 18.6945C16.6708 18.4889 16.815 18.3132 17 18.1896C17.185 18.066 17.4025 18 17.625 18C17.9234 18 18.2095 18.1185 18.4205 18.3295C18.6315 18.5405 18.75 18.8266 18.75 19.125ZM19.125 12.1341C19.0935 12.3074 19.0021 12.464 18.8666 12.5766C18.7312 12.6893 18.5605 12.7506 18.3844 12.75H7.23938L6.14906 6.75H20.1009L19.125 12.1341Z"
+                  fill="#F36522"></path>
+              </svg>
+              Add to Cart </button>
+          </div>
+        </div>
+        <div class="course-details-course-curriculum">
+          <div class="course-curriculum-heading d-flex align-items-center justify-content-between">
+            <h2 class="course-curriculum-title"> Course Curriculum </h2>
+            <div class="course-curriculum-video-quiz d-flex align-items-center">
+              <img src="./images/video-play-icon.svg" width="24px" height="24px" alt="video icon"
+                class="video-play-icon">
+              <div class="curriculum-video-quiz-title"><span class="curriculum-video-quiz-value"> 7 </span> Videos
+              </div>
+              <div class="curriculum-video-quiz-title curriculum-quiz-box"><span class="curriculum-video-quiz-value"> 1
+                </span> Quiz </div>
+            </div>
+          </div>
+          <div class="course-curriculum-lesson">
+            <div class="accordion" id="faqAccordion">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="CurriculumHeadingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#CurriculumLessonOne" aria-expanded="true" aria-controls="CurriculumLessonOne">
+                    <img src="./images/check-circle-fill-icon.svg" width="24px" height="24ps" alt="check icon">
+                    Chapter 1 – HCSSA Definitions and Licensing
+                  </button>
+                </h2>
+                <div id="CurriculumLessonOne" class="accordion-collapse collapse" aria-labelledby="CurriculumHeadingOne"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <h3 class="accordion-details-heading">Lesson Description:</h3>
+                    <p class="accordion-details-discription">Chapter 1: HCSSA Definitions and Licensing</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="CurriculumHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#CurriculumLessonTwo" aria-expanded="false" aria-controls="CurriculumLessonTwo">
+                    <img src="./images/check-circle-fill-icon.svg" width="24px" height="24ps" alt="check icon">
+                    Chapter 2: HCSSA Standards, Chapter 558
+                  </button>
+                </h2>
+                <div id="CurriculumLessonTwo" class="accordion-collapse collapse" aria-labelledby="CurriculumHeadingTwo"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <h3 class="accordion-details-heading">Lesson Description:</h3>
+                    <p class="accordion-details-discription">Chapter 2: HCSSA Standards, Chapter 558</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="CurriculumHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#CurriculumLessonThree" aria-expanded="false" aria-controls="CurriculumLessonThree">
+                    <img src="./images/check-circle-fill-icon.svg" width="24px" height="24ps" alt="check icon">
+                    Chapter 3: Emergency Preparedness and QAPI
+                  </button>
+                </h2>
+                <div id="CurriculumLessonThree" class="accordion-collapse collapse"
+                  aria-labelledby="CurriculumHeadingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <h3 class="accordion-details-heading">Lesson Description:</h3>
+                    <p class="accordion-details-discription">Chapter 3: Emergency Preparedness and QAPI</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="CurriculumHeadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#CurriculumLessonFour" aria-expanded="true" aria-controls="CurriculumLessonFour">
+                    <img src="./images/check-circle-fill-icon.svg" width="24px" height="24ps" alt="check icon">
+                    Chapter 4: Client Care Standards (HCSSA Standards)
+                  </button>
+                </h2>
+                <div id="CurriculumLessonFour" class="accordion-collapse collapse"
+                  aria-labelledby="CurriculumHeadingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <h3 class="accordion-details-heading">Lesson Description:</h3>
+                    <p class="accordion-details-discription">Chapter 4: Client Care Standards (HCSSA Standards)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="CurriculumHeadingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#CurriculumLessonFive" aria-expanded="false" aria-controls="CurriculumLessonFive">
+                    <img src="./images/check-circle-fill-icon.svg" width="24px" height="24ps" alt="check icon">
+                    Chapter 5: P.A.S.-Specific Standards and HHS State Survey Requirements
+                  </button>
+                </h2>
+                <div id="CurriculumLessonFive" class="accordion-collapse collapse"
+                  aria-labelledby="CurriculumHeadingFive" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <h3 class="accordion-details-heading">Lesson Description:</h3>
+                    <p class="accordion-details-discription">Chapter 5: P.A.S.-Specific Standards and HHS State Survey
+                      Requirements</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="CurriculumHeadingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#CurriculumLessonSix" aria-expanded="false" aria-controls="CurriculumLessonSix">
+                    <img src="./images/check-circle-fill-icon.svg" width="24px" height="24ps" alt="check icon">
+                    Chapter 6: Federal Rules for HCSSA Agencies
+                  </button>
+                </h2>
+                <div id="CurriculumLessonSix" class="accordion-collapse collapse" aria-labelledby="CurriculumHeadingSix"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <h3 class="accordion-details-heading">Lesson Description:</h3>
+                    <p class="accordion-details-discription">Chapter 6: Federal Rules for HCSSA Agencies</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="CurriculumHeadingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#CurriculumLessonSeven" aria-expanded="false" aria-controls="CurriculumLessonSeven">
+                    <img src="./images/check-circle-fill-icon.svg" width="24px" height="24ps" alt="check icon">
+                    Chapter 7: OSHA and CDC Guidelines for HCSSA
+                  </button>
+                </h2>
+                <div id="CurriculumLessonSeven" class="accordion-collapse collapse"
+                  aria-labelledby="CurriculumHeadingSeven" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <h3 class="accordion-details-heading">Lesson Description:</h3>
+                    <p class="accordion-details-discription">Chapter 7: OSHA and CDC Guidelines for HCSSA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- price with lesson Section End -->
+
+  <!-- Related Courses Section Start -->
+  <section class="our-courses-section course-details-related-courses-section">
+    <div class="container">
+      <div class="row">
+        <div class="related-courses-section-title section_heading text-start"> Related Courses
+        </div>
+        <div class="our-courses-tabing">
+
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Admin Tab -->
+            <div class="tab-pane d-block">
+              <div class="tabing-content-details ">
+                <div class="course-card-box">
+                  <div class="course-card-items">
+                    <a class="course-card-items-title" href="course-details.html"> 8 Hour Initial Administrator
+                      Training </a>
+                    <p class="course-card-items-desc"> Meets TX HHSC Requirement §558.259(c) for HCSSAs. HHS Approved 8
+                      hours of required pre-appointment clock hours for all
+                      license types including PAS, home health and hospice Administrators/Alternate Administrators. </p>
+                    <div class="course-card-items-rating">
+                      <span class="course-card-total-rating">4.5/5</span>
+                      <div class="course-card-total-star">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/half-fill-star.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/without-fill-star.svg" width="18px" height="18px" alt="star icon">
+                      </div>
+                      <span class="course-card-total-reviews">(1,234 Reviews)</span>
+                    </div>
+                    <div class="course-card-horizontal-line"></div>
+                    <div class="course-card-action d-flex justify-content-between align-items-center">
+                      <span class="course-card-price">$79</span>
+                      <button class="btn button-primary card-addto-cart-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.5756 5.51906C21.5052 5.43481 21.4172 5.36705 21.3177 5.32056C21.2183 5.27407 21.1098 5.24998 21 5.25H5.87625L5.30625 2.11594C5.27485 1.94313 5.1838 1.78681 5.04897 1.67425C4.91414 1.56169 4.74408 1.50003 4.56844 1.5H2.25C2.05109 1.5 1.86032 1.57902 1.71967 1.71967C1.57902 1.86032 1.5 2.05109 1.5 2.25C1.5 2.44891 1.57902 2.63968 1.71967 2.78033C1.86032 2.92098 2.05109 3 2.25 3H3.9375L6.33375 16.1522C6.40434 16.5422 6.57671 16.9067 6.83344 17.2087C6.47911 17.5397 6.22336 17.9623 6.09455 18.4298C5.96575 18.8972 5.96892 19.3912 6.10371 19.8569C6.23851 20.3226 6.49966 20.7419 6.85821 21.0683C7.21676 21.3947 7.6587 21.6154 8.13502 21.7059C8.61134 21.7965 9.10344 21.7533 9.55673 21.5813C10.01 21.4092 10.4068 21.115 10.7031 20.7312C10.9994 20.3474 11.1836 19.889 11.2353 19.407C11.287 18.9249 11.2041 18.4379 10.9959 18H15.2541C15.0863 18.3513 14.9995 18.7357 15 19.125C15 19.6442 15.154 20.1517 15.4424 20.5834C15.7308 21.0151 16.1408 21.3515 16.6205 21.5502C17.1001 21.7489 17.6279 21.8008 18.1371 21.6996C18.6463 21.5983 19.114 21.3483 19.4812 20.9812C19.8483 20.614 20.0983 20.1463 20.1996 19.6371C20.3008 19.1279 20.2489 18.6001 20.0502 18.1205C19.8515 17.6408 19.5151 17.2308 19.0834 16.9424C18.6517 16.654 18.1442 16.5 17.625 16.5H8.54719C8.37155 16.5 8.20149 16.4383 8.06665 16.3257C7.93182 16.2132 7.84077 16.0569 7.80938 15.8841L7.51219 14.25H18.3872C18.9141 14.2499 19.4243 14.0649 19.8288 13.7272C20.2333 13.3896 20.5064 12.9206 20.6006 12.4022L21.7406 6.13406C21.7599 6.02572 21.7551 5.91447 21.7266 5.80818C21.6981 5.7019 21.6466 5.60319 21.5756 5.51906ZM9.75 19.125C9.75 19.3475 9.68402 19.565 9.5604 19.75C9.43679 19.935 9.26109 20.0792 9.05552 20.1644C8.84995 20.2495 8.62375 20.2718 8.40552 20.2284C8.18729 20.185 7.98684 20.0778 7.8295 19.9205C7.67217 19.7632 7.56502 19.5627 7.52162 19.3445C7.47821 19.1262 7.50049 18.9 7.58564 18.6945C7.67078 18.4889 7.81498 18.3132 7.99998 18.1896C8.18499 18.066 8.4025 18 8.625 18C8.92337 18 9.20952 18.1185 9.4205 18.3295C9.63147 18.5405 9.75 18.8266 9.75 19.125ZM18.75 19.125C18.75 19.3475 18.684 19.565 18.5604 19.75C18.4368 19.935 18.2611 20.0792 18.0555 20.1644C17.85 20.2495 17.6238 20.2718 17.4055 20.2284C17.1873 20.185 16.9868 20.0778 16.8295 19.9205C16.6722 19.7632 16.565 19.5627 16.5216 19.3445C16.4782 19.1262 16.5005 18.9 16.5856 18.6945C16.6708 18.4889 16.815 18.3132 17 18.1896C17.185 18.066 17.4025 18 17.625 18C17.9234 18 18.2095 18.1185 18.4205 18.3295C18.6315 18.5405 18.75 18.8266 18.75 19.125ZM19.125 12.1341C19.0935 12.3074 19.0021 12.464 18.8666 12.5766C18.7312 12.6893 18.5605 12.7506 18.3844 12.75H7.23938L6.14906 6.75H20.1009L19.125 12.1341Z"
+                            fill="#F36522" />
+                        </svg>
+                        Add to Cart </button>
+                    </div>
+                  </div>
+                  <div class="course-card-items">
+                    <a class="course-card-items-title" href="course-details.html"> 16 Hour Initial Administrator
+                      Training </a>
+                    <p class="course-card-items-desc"> Meets the requirement from TX HHSC §558.259 (d) for HCSSAs. HHS
+                      Approved 16 hours of required pre-appointment clock
+                      hours for all license types including PAS, home health and hospice Administrators/Alternate
+                      Administrators. </p>
+                    <div class="course-card-items-rating">
+                      <span class="course-card-total-rating">4.5/5</span>
+                      <div class="course-card-total-star">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/half-fill-star.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/without-fill-star.svg" width="18px" height="18px" alt="star icon">
+                      </div>
+                      <span class="course-card-total-reviews">(1,234 Reviews)</span>
+                    </div>
+                    <div class="course-card-horizontal-line"></div>
+                    <div class="course-card-action d-flex justify-content-between align-items-center">
+                      <span class="course-card-price">$79</span>
+                      <button class="btn button-primary card-addto-cart-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.5756 5.51906C21.5052 5.43481 21.4172 5.36705 21.3177 5.32056C21.2183 5.27407 21.1098 5.24998 21 5.25H5.87625L5.30625 2.11594C5.27485 1.94313 5.1838 1.78681 5.04897 1.67425C4.91414 1.56169 4.74408 1.50003 4.56844 1.5H2.25C2.05109 1.5 1.86032 1.57902 1.71967 1.71967C1.57902 1.86032 1.5 2.05109 1.5 2.25C1.5 2.44891 1.57902 2.63968 1.71967 2.78033C1.86032 2.92098 2.05109 3 2.25 3H3.9375L6.33375 16.1522C6.40434 16.5422 6.57671 16.9067 6.83344 17.2087C6.47911 17.5397 6.22336 17.9623 6.09455 18.4298C5.96575 18.8972 5.96892 19.3912 6.10371 19.8569C6.23851 20.3226 6.49966 20.7419 6.85821 21.0683C7.21676 21.3947 7.6587 21.6154 8.13502 21.7059C8.61134 21.7965 9.10344 21.7533 9.55673 21.5813C10.01 21.4092 10.4068 21.115 10.7031 20.7312C10.9994 20.3474 11.1836 19.889 11.2353 19.407C11.287 18.9249 11.2041 18.4379 10.9959 18H15.2541C15.0863 18.3513 14.9995 18.7357 15 19.125C15 19.6442 15.154 20.1517 15.4424 20.5834C15.7308 21.0151 16.1408 21.3515 16.6205 21.5502C17.1001 21.7489 17.6279 21.8008 18.1371 21.6996C18.6463 21.5983 19.114 21.3483 19.4812 20.9812C19.8483 20.614 20.0983 20.1463 20.1996 19.6371C20.3008 19.1279 20.2489 18.6001 20.0502 18.1205C19.8515 17.6408 19.5151 17.2308 19.0834 16.9424C18.6517 16.654 18.1442 16.5 17.625 16.5H8.54719C8.37155 16.5 8.20149 16.4383 8.06665 16.3257C7.93182 16.2132 7.84077 16.0569 7.80938 15.8841L7.51219 14.25H18.3872C18.9141 14.2499 19.4243 14.0649 19.8288 13.7272C20.2333 13.3896 20.5064 12.9206 20.6006 12.4022L21.7406 6.13406C21.7599 6.02572 21.7551 5.91447 21.7266 5.80818C21.6981 5.7019 21.6466 5.60319 21.5756 5.51906ZM9.75 19.125C9.75 19.3475 9.68402 19.565 9.5604 19.75C9.43679 19.935 9.26109 20.0792 9.05552 20.1644C8.84995 20.2495 8.62375 20.2718 8.40552 20.2284C8.18729 20.185 7.98684 20.0778 7.8295 19.9205C7.67217 19.7632 7.56502 19.5627 7.52162 19.3445C7.47821 19.1262 7.50049 18.9 7.58564 18.6945C7.67078 18.4889 7.81498 18.3132 7.99998 18.1896C8.18499 18.066 8.4025 18 8.625 18C8.92337 18 9.20952 18.1185 9.4205 18.3295C9.63147 18.5405 9.75 18.8266 9.75 19.125ZM18.75 19.125C18.75 19.3475 18.684 19.565 18.5604 19.75C18.4368 19.935 18.2611 20.0792 18.0555 20.1644C17.85 20.2495 17.6238 20.2718 17.4055 20.2284C17.1873 20.185 16.9868 20.0778 16.8295 19.9205C16.6722 19.7632 16.565 19.5627 16.5216 19.3445C16.4782 19.1262 16.5005 18.9 16.5856 18.6945C16.6708 18.4889 16.815 18.3132 17 18.1896C17.185 18.066 17.4025 18 17.625 18C17.9234 18 18.2095 18.1185 18.4205 18.3295C18.6315 18.5405 18.75 18.8266 18.75 19.125ZM19.125 12.1341C19.0935 12.3074 19.0021 12.464 18.8666 12.5766C18.7312 12.6893 18.5605 12.7506 18.3844 12.75H7.23938L6.14906 6.75H20.1009L19.125 12.1341Z"
+                            fill="#F36522" />
+                        </svg>
+                        Add to Cart </button>
+                    </div>
+                  </div>
+                  <div class="course-card-items">
+                    <a class="course-card-items-title" href="course-details.html"> 12 Hour Home Care Business Mastery:
+                      Sales, Hiring, And Client
+                      Success Strategies</a>
+                    <p class="course-card-items-desc"> 12 Hour Home Care Business Mastery: Sales, Hiring, and Client
+                      Success Strategies. </p>
+                    <div class="course-card-items-rating">
+                      <span class="course-card-total-rating">4.5/5</span>
+                      <div class="course-card-total-star">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/fill-start.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/half-fill-star.svg" width="18px" height="18px" alt="star icon">
+                        <img src="./images/without-fill-star.svg" width="18px" height="18px" alt="star icon">
+                      </div>
+                      <span class="course-card-total-reviews">(1,234 Reviews)</span>
+                    </div>
+                    <div class="course-card-horizontal-line"></div>
+                    <div class="course-card-action d-flex justify-content-between align-items-center">
+                      <span class="course-card-price">$79</span>
+                      <button class="btn button-primary card-addto-cart-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M21.5756 5.51906C21.5052 5.43481 21.4172 5.36705 21.3177 5.32056C21.2183 5.27407 21.1098 5.24998 21 5.25H5.87625L5.30625 2.11594C5.27485 1.94313 5.1838 1.78681 5.04897 1.67425C4.91414 1.56169 4.74408 1.50003 4.56844 1.5H2.25C2.05109 1.5 1.86032 1.57902 1.71967 1.71967C1.57902 1.86032 1.5 2.05109 1.5 2.25C1.5 2.44891 1.57902 2.63968 1.71967 2.78033C1.86032 2.92098 2.05109 3 2.25 3H3.9375L6.33375 16.1522C6.40434 16.5422 6.57671 16.9067 6.83344 17.2087C6.47911 17.5397 6.22336 17.9623 6.09455 18.4298C5.96575 18.8972 5.96892 19.3912 6.10371 19.8569C6.23851 20.3226 6.49966 20.7419 6.85821 21.0683C7.21676 21.3947 7.6587 21.6154 8.13502 21.7059C8.61134 21.7965 9.10344 21.7533 9.55673 21.5813C10.01 21.4092 10.4068 21.115 10.7031 20.7312C10.9994 20.3474 11.1836 19.889 11.2353 19.407C11.287 18.9249 11.2041 18.4379 10.9959 18H15.2541C15.0863 18.3513 14.9995 18.7357 15 19.125C15 19.6442 15.154 20.1517 15.4424 20.5834C15.7308 21.0151 16.1408 21.3515 16.6205 21.5502C17.1001 21.7489 17.6279 21.8008 18.1371 21.6996C18.6463 21.5983 19.114 21.3483 19.4812 20.9812C19.8483 20.614 20.0983 20.1463 20.1996 19.6371C20.3008 19.1279 20.2489 18.6001 20.0502 18.1205C19.8515 17.6408 19.5151 17.2308 19.0834 16.9424C18.6517 16.654 18.1442 16.5 17.625 16.5H8.54719C8.37155 16.5 8.20149 16.4383 8.06665 16.3257C7.93182 16.2132 7.84077 16.0569 7.80938 15.8841L7.51219 14.25H18.3872C18.9141 14.2499 19.4243 14.0649 19.8288 13.7272C20.2333 13.3896 20.5064 12.9206 20.6006 12.4022L21.7406 6.13406C21.7599 6.02572 21.7551 5.91447 21.7266 5.80818C21.6981 5.7019 21.6466 5.60319 21.5756 5.51906ZM9.75 19.125C9.75 19.3475 9.68402 19.565 9.5604 19.75C9.43679 19.935 9.26109 20.0792 9.05552 20.1644C8.84995 20.2495 8.62375 20.2718 8.40552 20.2284C8.18729 20.185 7.98684 20.0778 7.8295 19.9205C7.67217 19.7632 7.56502 19.5627 7.52162 19.3445C7.47821 19.1262 7.50049 18.9 7.58564 18.6945C7.67078 18.4889 7.81498 18.3132 7.99998 18.1896C8.18499 18.066 8.4025 18 8.625 18C8.92337 18 9.20952 18.1185 9.4205 18.3295C9.63147 18.5405 9.75 18.8266 9.75 19.125ZM18.75 19.125C18.75 19.3475 18.684 19.565 18.5604 19.75C18.4368 19.935 18.2611 20.0792 18.0555 20.1644C17.85 20.2495 17.6238 20.2718 17.4055 20.2284C17.1873 20.185 16.9868 20.0778 16.8295 19.9205C16.6722 19.7632 16.565 19.5627 16.5216 19.3445C16.4782 19.1262 16.5005 18.9 16.5856 18.6945C16.6708 18.4889 16.815 18.3132 17 18.1896C17.185 18.066 17.4025 18 17.625 18C17.9234 18 18.2095 18.1185 18.4205 18.3295C18.6315 18.5405 18.75 18.8266 18.75 19.125ZM19.125 12.1341C19.0935 12.3074 19.0021 12.464 18.8666 12.5766C18.7312 12.6893 18.5605 12.7506 18.3844 12.75H7.23938L6.14906 6.75H20.1009L19.125 12.1341Z"
+                            fill="#F36522" />
+                        </svg>
+                        Add to Cart </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Our Courses Section End -->
+
+  <!-- Footer start -->
+  <footer class="footer">
+
+    <div class="container">
+      <div class="row footer-perent-box">
+        <div class="footer-col footer-signup-box col-12 col-lg-6">
+          <div class="footer-sign-up-box">
+            <h4 class="footer-sign-up-box-title">Stay sharp. Learn from leading experts on the latest business trends.
+            </h4>
+            <button class="button-primary footer-sign-up-box-btn">Sign up for courses</button>
+          </div>
+        </div>
+        <div class="footer-col col-12 col-md-6 col-lg-3">
+          <div class="quick-link">
+            <h3>Community</h3>
+            <ul class="footer-link">
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+              <li>
+                <a href="#">Partner</a>
+              </li>
+              <li>
+                <a href="#">Developers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Terms of News</a>
+              </li>
+              <li>
+                <a href="#">Consultation Booking</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col col-12 col-md-6 col-lg-3">
+          <div class="quick-link">
+            <h3>Resources</h3>
+            <ul class="footer-link">
+              <li>
+                <a href="#">Fulfillment Policies</a>
+              </li>
+            </ul>
+          </div>
+          <div class="quick-link call-our-text-field">
+            <h3>Call or Text Us at</h3>
+            <ul class="footer-link">
+              <li>
+                <a href="#">7139043571</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media-and-copyright-section">
+            <div class="social-media-and-copyright d-flex align-items-center justify-content-between">
+              <ul class="social-media-icon d-flex">
+                <li>
+                  <a href="#" class="social-link d-flex">
+                    <img src="./images/facebook-icon.svg" alt="icon" width="10" height="18" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link d-flex">
+                    <img src="./images/instagram-icon.svg" alt="icon" width="18" height="18" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link d-flex">
+                    <img src="./images/linkedin-icon.svg" alt="icon" width="18" height="18" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link d-flex">
+                    <img src="./images/twitter-icon.svg" alt="icon" width="18" height="14" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- Footer End -->
+
+
+  <!-- Bootstrap 5 js Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick slider js -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
